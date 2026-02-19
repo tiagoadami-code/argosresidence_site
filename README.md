@@ -12,7 +12,7 @@ Landing page estática e minimalista (1 página) para o empreendimento Argos Res
 ```
 
 ## Importante
-- A capa/hero usa o arquivo `inicial.jpg` na raiz do site.
+- A capa/hero busca `./inicial.jpg` e também `/inicial.jpg` para evitar erro de caminho no deploy.
 - Este PR **não inclui arquivos binários/imagens**.
 - Ao publicar, faça upload manual de `inicial.jpg` junto com os arquivos acima.
 

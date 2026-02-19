@@ -3,9 +3,10 @@
   --text-muted: rgba(247, 247, 242, 0.88);
   --overlay-top: rgba(18, 17, 14, 0.25);
   --overlay-bottom: rgba(18, 17, 14, 0.62);
-  --cta-bg: #1b1b1a;
+  --cta-bg: #25d366;
+  --cta-bg-hover: #1fb85a;
   --cta-text: #ffffff;
-  --cta-border: rgba(255, 255, 255, 0.3);
+  --cta-border: rgba(255, 255, 255, 0.35);
 }
 
 * {
@@ -29,7 +30,8 @@ body {
   display: grid;
   align-content: end;
   padding: clamp(1.5rem, 3vw, 2.5rem);
-  background-image: url("inicial.jpg");
+  background-color: #dcd8d1;
+  background-image: url("./inicial.jpg"), url("/inicial.jpg");
   background-size: cover;
   background-position: center;
   isolation: isolate;
@@ -82,12 +84,13 @@ p {
   color: var(--cta-text);
   text-decoration: none;
   font-size: 0.95rem;
-  font-weight: 600;
-  backdrop-filter: blur(4px);
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
 }
 
 .whatsapp-cta:hover {
   transform: translateY(-1px);
+  background: var(--cta-bg-hover);
 }
 
 .whatsapp-cta:focus-visible {
