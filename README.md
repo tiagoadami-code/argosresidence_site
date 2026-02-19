@@ -27,3 +27,9 @@ Landing page estática e minimalista (1 página) para o empreendimento Argos Res
 1. Envie `index.html`, `styles.css` e `README.md` para `public_html`.
 2. Envie também o arquivo `inicial.jpg` para a raiz do site.
 3. Acesse o domínio e valide a página.
+
+
+## Dica se as alterações não aparecerem
+- Faça *hard refresh* (`Ctrl+F5`) após o deploy.
+- Se usar CDN/cache na hospedagem, limpe o cache.
+- Confirme que `inicial.jpg` está no mesmo nível do `index.html` (raiz publicada).
