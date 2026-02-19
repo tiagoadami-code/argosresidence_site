@@ -31,7 +31,7 @@ body {
   align-content: end;
   padding: clamp(1.5rem, 3vw, 2.5rem);
   background-color: #dcd8d1;
-  background-image: url("./inicial.jpg?v=2"), url("/inicial.jpg?v=2");
+  background-image: url("./inicial.jpg"), url("/inicial.jpg"), url("./assets/inicial.jpg"), url("/assets/inicial.jpg");
   background-size: cover;
   background-position: center;
   isolation: isolate;

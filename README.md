@@ -12,7 +12,7 @@ Landing page estática e minimalista (1 página) para o empreendimento Argos Res
 ```
 
 ## Importante
-- A capa/hero busca `./inicial.jpg` e também `/inicial.jpg` para evitar erro de caminho no deploy.
+- A capa/hero tenta estes caminhos: `./inicial.jpg`, `/inicial.jpg`, `./assets/inicial.jpg`, `/assets/inicial.jpg`.
 - Este PR **não inclui arquivos binários/imagens**.
 - Ao publicar, faça upload manual de `inicial.jpg` junto com os arquivos acima.
 
@@ -32,4 +32,4 @@ Landing page estática e minimalista (1 página) para o empreendimento Argos Res
 ## Dica se as alterações não aparecerem
 - Faça *hard refresh* (`Ctrl+F5`) após o deploy.
 - Se usar CDN/cache na hospedagem, limpe o cache.
-- Confirme que `inicial.jpg` está no mesmo nível do `index.html` (raiz publicada).
+- Confirme que `inicial.jpg` está na raiz publicada (`/inicial.jpg`) ou em `/assets/inicial.jpg`.
