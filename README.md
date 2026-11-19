@@ -1,35 +1,31 @@
-# Argos Residence — Landing Page Temporária
+# Argos Residence — site de pré-lançamento
 
-Landing page estática e minimalista (1 página) para o empreendimento Argos Residence.
+Site estático de uma página (HTML + CSS + JS puro, sem build) para o empreendimento Argos Residence.
 
-## Arquivos deste projeto
+## Estrutura
 
 ```text
 /
-  index.html
-  styles.css
-  README.md
+  index.html        página única: capa, projeto, lista de interesse, rodapé
+  styles.css        estilos (paleta tirada da fachada, fonte Archivo via Google Fonts)
+  script.js         monta a mensagem do formulário e abre o WhatsApp
+  assets/
+    inicial.jpg / inicial.webp / inicial-1080.webp   imagem da capa (JPG de reserva + WebP)
+    fachada-detalhe.jpg / .webp                      recorte usado na seção "O projeto"
+    favicon.svg
 ```
 
-## Importante
-- A capa/hero tenta estes caminhos: `./inicial.jpg`, `/inicial.jpg`, `./assets/inicial.jpg`, `/assets/inicial.jpg`.
-- Este PR **não inclui arquivos binários/imagens**.
-- Ao publicar, faça upload manual de `inicial.jpg` junto com os arquivos acima.
+## Lista de interesse
+Não há servidor: o formulário monta uma mensagem com nome, objetivo (morar/investir) e pergunta,
+e abre o WhatsApp `+55 11 92199-1337` com o texto pronto. Para trocar o número, edite
+`WHATSAPP` em `script.js` e o link do botão flutuante em `index.html`.
 
 ## Publicação na Hostinger
+Envie **todo o conteúdo do repositório** (incluindo a pasta `assets/`) para `public_html`,
+via Git ou Gerenciador de Arquivos.
 
-### Opção A — Git (se disponível)
-1. Conecte o repositório GitHub na Hostinger.
-2. Defina a raiz do projeto como diretório de publicação.
-3. Faça o deploy e garanta que `inicial.jpg` também esteja presente no servidor.
+Depois do domínio definido, troque `og:image` em `index.html` por uma URL absoluta
+(ex.: `https://seudominio.com.br/assets/inicial.jpg`) para a prévia aparecer no WhatsApp e redes sociais.
 
-### Opção B — File Manager / FTP
-1. Envie `index.html`, `styles.css` e `README.md` para `public_html`.
-2. Envie também o arquivo `inicial.jpg` para a raiz do site.
-3. Acesse o domínio e valide a página.
-
-
-## Dica se as alterações não aparecerem
-- Faça *hard refresh* (`Ctrl+F5`) após o deploy.
-- Se usar CDN/cache na hospedagem, limpe o cache.
-- Confirme que `inicial.jpg` está na raiz publicada (`/inicial.jpg`) ou em `/assets/inicial.jpg`.
+Se as alterações não aparecerem, aumente o `?v=` de `styles.css` e `script.js` no `index.html`
+e limpe o cache da hospedagem.

@@ -3,47 +3,197 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <title>Argos Residence | O Lugar Certo, do Jeito Certo</title>
+    <title>Argos Residence | O lugar certo, do jeito certo</title>
     <meta
       name="description"
-      content="Argos Residence — o lugar certo, do jeito certo. Mais informações em breve."
+      content="Argos Residence: um edifício residencial de varandas curvas e fachada em tijolo aparente. Entre na lista de interesse e receba as informações do lançamento em primeira mão."
     />
+    <meta name="theme-color" content="#232a3b" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Argos Residence | O Lugar Certo, do Jeito Certo" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Argos Residence" />
+    <meta property="og:title" content="Argos Residence | O lugar certo, do jeito certo" />
     <meta
       property="og:description"
-      content="Argos Residence — o lugar certo, do jeito certo. Mais informações em breve."
+      content="Varandas curvas, tijolo aparente e luz do fim de tarde. Entre na lista de interesse do lançamento."
     />
-    <meta property="og:image" content="./inicial.jpg" />
-    <meta property="og:locale" content="pt_BR" />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <meta property="og:image" content="assets/inicial.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="assets/inicial.webp" type="image/webp" fetchpriority="high" />
+    <link rel="stylesheet" href="styles.css?v=4" />
   </head>
   <body>
-    <main class="hero" role="main" aria-label="Capa Argos Residence">
-      <div class="overlay" aria-hidden="true"></div>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-      <section class="content">
-        <h1>
-          <span>O LUGAR CERTO,</span>
-          <span>DO JEITO CERTO.</span>
-        </h1>
-        <p>Argos Residence — mais informações em breve.</p>
+    <header class="topbar">
+      <a class="brand" href="#topo" aria-label="Argos Residence, voltar ao início">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="13" y="2" width="6" height="28" rx="1" />
+          <path d="M4 9h20a4 4 0 0 1 4 4M4 16h20a4 4 0 0 1 4 4M4 23h20a4 4 0 0 1 4 4" />
+        </svg>
+        <span>Argos <em>Residence</em></span>
+      </a>
+      <nav aria-label="Seções">
+        <a href="#projeto">O projeto</a>
+        <a href="#interesse">Lista de interesse</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="topo" aria-labelledby="hero-title">
+        <picture class="hero-media">
+          <source
+            type="image/webp"
+            srcset="assets/inicial-1080.webp 1080w, assets/inicial.webp 1920w"
+            sizes="100vw"
+          />
+          <img
+            src="assets/inicial.jpg"
+            width="1920"
+            height="1080"
+            alt="Fachada do Argos Residence vista de baixo: varandas de bordas curvas em concreto claro sobre tijolo aparente, iluminadas pelo sol do fim de tarde."
+            fetchpriority="high"
+          />
+        </picture>
+
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            <span class="l1">O lugar certo,</span>
+            <span class="l2">do jeito certo.</span>
+          </h1>
+          <p class="hero-lede">
+            Um edifício residencial desenhado em camadas de luz e sombra.
+            O lançamento está chegando.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#interesse">Entrar na lista de interesse</a>
+            <a class="btn btn-ghost" href="#projeto">Conhecer o projeto</a>
+          </div>
+        </div>
       </section>
 
-      <a
-        class="whatsapp-cta"
-        href="https://wa.me/5511921991337?text=Visitei%20o%20site%20e%20quero%20saber%20mais%20sobre%20o%20empreendimento%20Argos%20Residence"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Falar no WhatsApp sobre o empreendimento Argos Residence"
-      >
-        Falar no WhatsApp
-      </a>
+      <section class="project" id="projeto" aria-labelledby="projeto-title">
+        <div class="project-intro">
+          <h2 id="projeto-title">Arquitetura que se reconhece de longe.</h2>
+          <p>
+            O Argos Residence nasce de uma ideia simples: cada andar deve ser
+            visto e vivido. As varandas avançam sobre a fachada em linhas
+            contínuas, e o tijolo aparente traz calor a quem chega e a quem mora.
+          </p>
+        </div>
 
-      <small class="copyright">© Argos Residence</small>
+        <figure class="project-figure">
+          <picture>
+            <source type="image/webp" srcset="assets/fachada-detalhe.webp" />
+            <img
+              src="assets/fachada-detalhe.jpg"
+              width="900"
+              height="797"
+              loading="lazy"
+              alt="Detalhe da fachada: as varandas curvas se repetem andar por andar, com luzes embutidas no forro."
+            />
+          </picture>
+          <figcaption>Imagem ilustrativa da fachada.</figcaption>
+        </figure>
+
+        <ul class="traits">
+          <li>
+            <h3>Varandas de curvas contínuas</h3>
+            <p>
+              As lajes contornam o edifício sem quinas vivas e desenham o ritmo
+              da fachada. Cada varanda ganha sombra própria nas horas mais quentes.
+            </p>
+          </li>
+          <li>
+            <h3>Tijolo aparente</h3>
+            <p>
+              Um material honesto, que envelhece bem e dá textura à luz do sol.
+              O contraste com o concreto claro marca cada pavimento.
+            </p>
+          </li>
+          <li>
+            <h3>Um eixo vertical</h3>
+            <p>
+              Uma coluna marcante atravessa a fachada do chão à cobertura e
+              organiza o conjunto, como a lombada de um livro.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="interest" id="interesse" aria-labelledby="interesse-title">
+        <div class="interest-copy">
+          <h2 id="interesse-title">Seja o primeiro a saber.</h2>
+          <p>
+            Plantas, localização, valores e condições serão apresentados primeiro
+            a quem estiver na lista de interesse. Deixe seu nome e falamos com você
+            pelo WhatsApp.
+          </p>
+        </div>
+
+        <form class="interest-form" id="interest-form" novalidate>
+          <div class="field">
+            <label for="nome">Seu nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required />
+            <p class="field-error" id="nome-erro" hidden>Escreva seu nome para continuarmos.</p>
+          </div>
+
+          <fieldset class="field">
+            <legend>Você procura</legend>
+            <div class="choices">
+              <label><input type="radio" name="objetivo" value="morar" checked /> Para morar</label>
+              <label><input type="radio" name="objetivo" value="investir" /> Para investir</label>
+              <label><input type="radio" name="objetivo" value="ambos" /> Os dois</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="mensagem">Alguma pergunta? <span class="optional">(opcional)</span></label>
+            <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+          </div>
+
+          <button class="btn btn-solid btn-wide" type="submit">
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>
+            Enviar pelo WhatsApp
+          </button>
+          <p class="form-note">
+            Abriremos o WhatsApp com sua mensagem pronta. Você revisa e envia.
+          </p>
+        </form>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer-brand">Argos <em>Residence</em></div>
+      <p class="footer-legal">
+        Imagens meramente ilustrativas. Empreendimento em fase de pré-lançamento;
+        informações sujeitas a alteração.
+      </p>
+      <p class="footer-copy">© <span id="ano">2026</span> Argos Residence</p>
+    </footer>
+
+    <a
+      class="whatsapp-fab"
+      id="whatsapp-fab"
+      href="https://wa.me/5511921991337?text=Visitei%20o%20site%20e%20quero%20saber%20mais%20sobre%20o%20empreendimento%20Argos%20Residence"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>
+      <span>Falar no WhatsApp</span>
+    </a>
+
+    <script src="script.js?v=4" defer></script>
   </body>
 </html>
