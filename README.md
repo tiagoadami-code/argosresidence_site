@@ -1,28 +1,33 @@
-# Argos Residence — site de pré-lançamento
+# Argos Residence — site do lançamento
 
-Site estático de uma página (HTML + CSS + JS puro, sem build) para o empreendimento Argos Residence.
+Site estático de uma página (HTML + CSS + JS puro, sem build) do Argos Residence,
+Av. Dr. Cavalcanti, 516 — Centro, Jundiaí/SP. Publicado em https://argosresidence.com.br.
+
+A linguagem visual segue o folheto impresso: verde-oliva com textura de folhas, fundo greige,
+títulos em serifa maiúscula (Gilda Display, no lugar da Lovelace do impresso) e texto em Montserrat.
 
 ## Estrutura
 
 ```text
 /
-  index.html        página única: capa, projeto, lista de interesse, rodapé
-  styles.css        estilos (paleta tirada da fachada, fonte Archivo via Google Fonts)
-  script.js         monta a mensagem do formulário e abre o WhatsApp
+  index.html     capa, diferenciais, localização, plantas, lazer, tour 360°, autores, decorado
+  styles.css     estilos
+  script.js      menu, abas das plantas, galeria ampliada, tour 360° e formulário do WhatsApp
   assets/
-    inicial.jpg / inicial.webp / inicial-1080.webp   imagem da capa (JPG de reserva + WebP)
-    fachada-detalhe.jpg / .webp                      recorte usado na seção "O projeto"
+    og-argos.jpg     imagem de prévia para WhatsApp e redes sociais (1200x630)
     favicon.svg
+    img/             perspectivas, plantas, mapa, logos e textura extraídos do folheto (WebP)
 ```
 
-## Lista de interesse
-Não há servidor: o formulário monta uma mensagem com nome, objetivo (morar/investir) e pergunta,
-e abre o WhatsApp `+55 11 92199-1337` com o texto pronto. Para trocar o número, edite
-`WHATSAPP` em `script.js` e o link do botão flutuante em `index.html`.
+## Como funciona
+- **Lista de interesse:** o formulário abre o WhatsApp `+55 11 92199-1337` com nome, objetivo,
+  planta e pergunta. Para trocar o número, edite `WHATSAPP` em `script.js` e os links `wa.me` em `index.html`.
+- **Tour 360°:** o player do Kuula (coleção `7HyZb`) só carrega quando a pessoa clica em "Iniciar tour 360°".
+  O endereço fica no atributo `data-src` de `#tour-frame` em `index.html`.
+- **Plantas:** cada aba é um painel `role="tabpanel"`; para mudar textos, edite o painel correspondente.
 
-## Publicação na Hostinger
-O site está em https://argosresidence.com.br, com deploy automático pelo Git da Hostinger:
-cada push na `main` publica o site (webhook configurado no GitHub).
+## Publicação
+Deploy automático pelo Git da Hostinger: cada push na `main` publica o site (webhook configurado no GitHub).
 
 Se as alterações não aparecerem, aumente o `?v=` de `styles.css` e `script.js` no `index.html`
 e limpe o cache da hospedagem.
