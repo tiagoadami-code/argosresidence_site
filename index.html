@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Argos Residence | O lugar certo, do jeito certo</title>
+    <title>Argos Residence | O lugar certo, do jeito certo · Centro de Jundiaí</title>
     <meta
       name="description"
-      content="Argos Residence: um edifício residencial de varandas curvas e fachada em tijolo aparente. Entre na lista de interesse e receba as informações do lançamento em primeira mão."
+      content="Argos Residence: apartamentos compactos de alto padrão no Centro de Jundiaí, de 38,75 m² a 78 m², com piscina, academia, terraço e lazer completo. Visite o decorado na Av. Dr. Cavalcanti, 516."
     />
-    <meta name="theme-color" content="#232a3b" />
+    <meta name="theme-color" content="#4f5444" />
+    <link rel="canonical" href="https://argosresidence.com.br/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
     <meta property="og:type" content="website" />
@@ -17,129 +18,395 @@
     <meta property="og:title" content="Argos Residence | O lugar certo, do jeito certo" />
     <meta
       property="og:description"
-      content="Varandas curvas, tijolo aparente e luz do fim de tarde. Entre na lista de interesse do lançamento."
+      content="Apartamentos compactos de alto padrão no Centro de Jundiaí. Plantas de 38,75 m² a 78 m², lazer completo e tour virtual 360°."
     />
-    <meta property="og:image" content="assets/inicial.jpg" />
-    <meta property="og:image:width" content="1920" />
-    <meta property="og:image:height" content="1080" />
+    <meta property="og:url" content="https://argosresidence.com.br/" />
+    <meta property="og:image" content="https://argosresidence.com.br/assets/og-argos.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preload" as="image" href="assets/inicial.webp" type="image/webp" fetchpriority="high" />
-    <link rel="stylesheet" href="styles.css?v=4" />
+    <link rel="preload" as="image" href="assets/img/fachada-recorte-700.webp" imagesrcset="assets/img/fachada-recorte-700.webp 700w, assets/img/fachada-recorte.webp 1400w" imagesizes="(max-width: 900px) 90vw, 46vw" />
+    <link rel="stylesheet" href="styles.css?v=6" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ApartmentComplex",
+        "name": "Argos Residence",
+        "url": "https://argosresidence.com.br/",
+        "image": "https://argosresidence.com.br/assets/og-argos.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Dr. Cavalcanti, 516",
+          "addressLocality": "Jundiaí",
+          "addressRegion": "SP",
+          "postalCode": "13201-003",
+          "addressCountry": "BR"
+        },
+        "amenityFeature": [
+          "Hall", "Salão de festas", "Área gourmet", "Academia", "Espaço pet",
+          "Lavanderia", "Piscina", "Sala de jogos", "Terraço"
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-    <header class="topbar">
+    <header class="topbar" id="topbar">
       <a class="brand" href="#topo" aria-label="Argos Residence, voltar ao início">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-          <rect x="13" y="2" width="6" height="28" rx="1" />
-          <path d="M4 9h20a4 4 0 0 1 4 4M4 16h20a4 4 0 0 1 4 4M4 23h20a4 4 0 0 1 4 4" />
-        </svg>
-        <span>Argos <em>Residence</em></span>
+        <img class="brand-light" src="assets/img/logo-argos-branco.webp" width="700" height="573" alt="" />
+        <img class="brand-dark" src="assets/img/logo-argos-verde.webp" width="700" height="573" alt="" />
       </a>
-      <nav aria-label="Seções">
-        <a href="#projeto">O projeto</a>
-        <a href="#interesse">Lista de interesse</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="menu-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Abrir menu</span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Seções">
+        <a href="#localizacao">Localização</a>
+        <a href="#plantas">Plantas</a>
+        <a href="#lazer">Lazer</a>
+        <a href="#tour">Tour 360°</a>
+        <a class="menu-cta" href="#decorado">Visite o decorado</a>
       </nav>
     </header>
 
     <main id="conteudo">
+      <!-- Capa -->
       <section class="hero" id="topo" aria-labelledby="hero-title">
-        <picture class="hero-media">
-          <source
-            type="image/webp"
-            srcset="assets/inicial-1080.webp 1080w, assets/inicial.webp 1920w"
-            sizes="100vw"
-          />
+        <div class="hero-copy">
+          <p class="hero-place">Centro de Jundiaí – SP</p>
+          <h1 id="hero-title" class="display">
+            O lugar certo,<br />do jeito certo.
+          </h1>
+          <p class="hero-lede">
+            Apartamentos compactos de alto padrão, de 38,75 m² a 78 m², no coração de Jundiaí.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="#decorado">Agendar visita ao decorado</a>
+            <a class="btn btn-outline-light" href="#plantas">Conhecer as plantas</a>
+          </div>
+        </div>
+        <picture class="hero-building">
           <img
-            src="assets/inicial.jpg"
-            width="1920"
-            height="1080"
-            alt="Fachada do Argos Residence vista de baixo: varandas de bordas curvas em concreto claro sobre tijolo aparente, iluminadas pelo sol do fim de tarde."
+            src="assets/img/fachada-recorte-700.webp"
+            srcset="assets/img/fachada-recorte-700.webp 700w, assets/img/fachada-recorte.webp 1400w"
+            sizes="(max-width: 900px) 90vw, 46vw"
+            width="1400"
+            height="1469"
+            alt="Perspectiva ilustrada da fachada do Argos Residence: torre de tijolo aparente com varandas curvas claras e térreo com palmeiras."
             fetchpriority="high"
           />
         </picture>
+        <span class="caption hero-caption">Perspectiva ilustrada da fachada</span>
+      </section>
 
-        <div class="hero-copy">
-          <h1 id="hero-title">
-            <span class="l1">O lugar certo,</span>
-            <span class="l2">do jeito certo.</span>
-          </h1>
-          <p class="hero-lede">
-            Um edifício residencial desenhado em camadas de luz e sombra.
-            O lançamento está chegando.
+      <!-- Diferenciais -->
+      <section class="section intro" aria-labelledby="intro-title">
+        <div class="intro-media">
+          <img
+            src="assets/img/fachada-rua-700.webp"
+            srcset="assets/img/fachada-rua-700.webp 700w, assets/img/fachada-rua.webp 1400w"
+            sizes="(max-width: 900px) 100vw, 40vw"
+            width="1400"
+            height="1400"
+            loading="lazy"
+            alt="Perspectiva ilustrada da fachada vista da rua, ao entardecer."
+          />
+          <span class="caption">Perspectiva ilustrada da fachada</span>
+        </div>
+
+        <div class="intro-copy">
+          <h2 id="intro-title" class="heading rule">Investir aqui é antecipar o futuro</h2>
+          <p class="lead">
+            Enquanto o mercado busca imóveis comuns, você investe em um produto alinhado às novas
+            tendências urbanas, com alto padrão construtivo e localização estratégica.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-solid" href="#interesse">Entrar na lista de interesse</a>
-            <a class="btn btn-ghost" href="#projeto">Conhecer o projeto</a>
-          </div>
+
+          <ul class="checks">
+            <li>
+              <strong>Alto potencial de valorização</strong>
+              Região central com infraestrutura completa, mobilidade facilitada e forte demanda por
+              moradia compacta de qualidade.
+            </li>
+            <li>
+              <strong>Perfil ideal para locação</strong>
+              Apartamento de 1 dormitório, perfeito para executivos, jovens profissionais, estudantes
+              de pós-graduação e investidores que buscam liquidez.
+            </li>
+            <li>
+              <strong>Arquitetura contemporânea e inovadora</strong>
+              Projeto moderno, com soluções inteligentes de espaço que aumentam o valor percebido e
+              reduzem a vacância.
+            </li>
+            <li>
+              <strong>Tecnologia integrada</strong>
+              Infraestrutura para automação, segurança digital e eficiência energética, diferenciais
+              cada vez mais exigidos pelo mercado.
+            </li>
+            <li>
+              <strong>Acessibilidade como valor</strong>
+              Projeto pensado para inclusão, ampliando o público-alvo e fortalecendo a
+              sustentabilidade do investimento.
+            </li>
+          </ul>
+
+          <p class="closing">
+            Mais do que um apartamento.<br />Um ativo sólido, moderno e altamente rentável.
+          </p>
         </div>
       </section>
 
-      <section class="project" id="projeto" aria-labelledby="projeto-title">
-        <div class="project-intro">
-          <h2 id="projeto-title">Arquitetura que se reconhece de longe.</h2>
+      <!-- Localização -->
+      <section class="section location" id="localizacao" aria-labelledby="loc-title">
+        <div class="location-copy">
+          <h2 id="loc-title" class="heading">
+            Localização estratégica
+            <span class="heading-sub">no coração de Jundiaí</span>
+          </h2>
           <p>
-            O Argos Residence nasce de uma ideia simples: cada andar deve ser
-            visto e vivido. As varandas avançam sobre a fachada em linhas
-            contínuas, e o tijolo aparente traz calor a quem chega e a quem mora.
+            Invista em um apartamento compacto de alto padrão, projetado para atender à nova demanda
+            urbana: funcionalidade, tecnologia e valorização contínua.
           </p>
+          <p>
+            Localizado na região central de Jundiaí, o empreendimento une arquitetura inovadora,
+            design inteligente e acessibilidade total, criando um produto altamente desejado por
+            locatários e compradores finais.
+          </p>
+          <address class="address">
+            Av. Dr. Cavalcanti, 516<br />Centro, Jundiaí – SP, 13201-003
+          </address>
+          <a
+            class="btn btn-dark"
+            href="https://www.google.com/maps/search/?api=1&query=Av.+Dr.+Cavalcanti,+516,+Centro,+Jundia%C3%AD+-+SP,+13201-003"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Abrir no Google Maps</a>
         </div>
 
-        <figure class="project-figure">
-          <picture>
-            <source type="image/webp" srcset="assets/fachada-detalhe.webp" />
-            <img
-              src="assets/fachada-detalhe.jpg"
-              width="900"
-              height="797"
-              loading="lazy"
-              alt="Detalhe da fachada: as varandas curvas se repetem andar por andar, com luzes embutidas no forro."
-            />
-          </picture>
-          <figcaption>Imagem ilustrativa da fachada.</figcaption>
+        <figure class="location-map">
+          <img
+            src="assets/img/mapa-900.webp"
+            srcset="assets/img/mapa-900.webp 900w, assets/img/mapa.webp 1800w"
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            width="1800"
+            height="1224"
+            loading="lazy"
+            alt="Mapa ilustrado do entorno: Teatro Polytheama, Estação Jundiaí, Jundiaí Shopping, Mercadão Ferroviários, Complexo Educacional e Cultural Argos, SENAI e grandes redes de comércio próximos ao empreendimento."
+          />
+          <figcaption>
+            Perto do Teatro Polytheama, da Estação Jundiaí, do Jundiaí Shopping, do Mercadão
+            Ferroviários e das principais avenidas do Centro.
+          </figcaption>
         </figure>
 
-        <ul class="traits">
-          <li>
-            <h3>Varandas de curvas contínuas</h3>
-            <p>
-              As lajes contornam o edifício sem quinas vivas e desenham o ritmo
-              da fachada. Cada varanda ganha sombra própria nas horas mais quentes.
-            </p>
-          </li>
-          <li>
-            <h3>Tijolo aparente</h3>
-            <p>
-              Um material honesto, que envelhece bem e dá textura à luz do sol.
-              O contraste com o concreto claro marca cada pavimento.
-            </p>
-          </li>
-          <li>
-            <h3>Um eixo vertical</h3>
-            <p>
-              Uma coluna marcante atravessa a fachada do chão à cobertura e
-              organiza o conjunto, como a lombada de um livro.
-            </p>
-          </li>
+        <figure class="location-aerial">
+          <img
+            src="assets/img/aerea-800.webp"
+            srcset="assets/img/aerea-800.webp 800w, assets/img/aerea.webp 1200w"
+            sizes="(max-width: 900px) 100vw, 46vw"
+            width="1200"
+            height="1200"
+            loading="lazy"
+            alt="Perspectiva ilustrada aérea do edifício em meio ao Centro de Jundiaí."
+          />
+          <span class="caption">Perspectiva ilustrada aérea</span>
+        </figure>
+      </section>
+
+      <!-- Plantas -->
+      <section class="section plans" id="plantas" aria-labelledby="plans-title">
+        <header class="plans-head">
+          <h2 id="plans-title" class="heading rule">Onde viver bem se torna natural</h2>
+          <p class="lead">
+            Cinco plantas, do compacto de uma suíte às coberturas. Escolha a sua.
+          </p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Plantas">
+          <button role="tab" id="tab-a" aria-controls="painel-a" aria-selected="true">
+            <span class="tab-area">38,75 m²</span><span class="tab-name">Tipo A</span>
+          </button>
+          <button role="tab" id="tab-b" aria-controls="painel-b" aria-selected="false" tabindex="-1">
+            <span class="tab-area">39,00 m²</span><span class="tab-name">Tipo B</span>
+          </button>
+          <button role="tab" id="tab-c" aria-controls="painel-c" aria-selected="false" tabindex="-1">
+            <span class="tab-area">78,00 m²</span><span class="tab-name">Tipo C</span>
+          </button>
+          <button role="tab" id="tab-d" aria-controls="painel-d" aria-selected="false" tabindex="-1">
+            <span class="tab-area">53,80 m²</span><span class="tab-name">Tipo D · Cobertura</span>
+          </button>
+          <button role="tab" id="tab-e" aria-controls="painel-e" aria-selected="false" tabindex="-1">
+            <span class="tab-area">53,80 m²</span><span class="tab-name">Tipo E · Cobertura</span>
+          </button>
+        </div>
+
+        <div class="plan" role="tabpanel" id="painel-a" aria-labelledby="tab-a" tabindex="0">
+          <figure class="plan-figure">
+            <img src="assets/img/planta-tipo-a-700.webp" srcset="assets/img/planta-tipo-a-700.webp 700w, assets/img/planta-tipo-a.webp 1008w" sizes="(max-width: 900px) 90vw, 34vw" width="1008" height="1316" loading="lazy" alt="Planta humanizada do Tipo A: sala e cozinha integradas, suíte e área de serviço." />
+          </figure>
+          <div class="plan-info">
+            <p class="plan-area">38,75 m²</p>
+            <p class="plan-name">Tipo A (padrão) · 01 suíte</p>
+            <h3 class="plan-list-title">Entregue com</h3>
+            <ul class="plan-features">
+              <li>Cozinha com churrasqueira elétrica e bancada de apoio</li>
+              <li>Infraestrutura para máquina de lavar</li>
+              <li>Aquecedor a gás de passagem: água quente instantânea nos chuveiros, pias das suítes e cozinha*</li>
+              <li>Ponto e rede frigorígena para ar-condicionado nas áreas sociais e no dormitório*</li>
+              <li>Área técnica exclusiva para as máquinas de ar-condicionado</li>
+              <li>Janelas antirruído e persiana integrada, com previsão para automação a cargo do cliente</li>
+            </ul>
+            <p class="footnote">*Infraestrutura entregue pela construtora; equipamento a cargo do cliente.</p>
+          </div>
+        </div>
+
+        <div class="plan" role="tabpanel" id="painel-b" aria-labelledby="tab-b" tabindex="0" hidden>
+          <figure class="plan-figure">
+            <img src="assets/img/planta-tipo-b-700.webp" srcset="assets/img/planta-tipo-b-700.webp 700w, assets/img/planta-tipo-b.webp 1153w" sizes="(max-width: 900px) 90vw, 34vw" width="1153" height="1494" loading="lazy" alt="Planta humanizada do Tipo B: sala com mesa de jantar, cozinha linear e suíte." />
+          </figure>
+          <div class="plan-info">
+            <p class="plan-area">39,00 m²</p>
+            <p class="plan-name">Tipo B (padrão) · 01 suíte</p>
+            <h3 class="plan-list-title">Entregue com</h3>
+            <ul class="plan-features">
+              <li>Cozinha com churrasqueira elétrica e bancada de apoio</li>
+              <li>Infraestrutura para máquina de lavar</li>
+              <li>Aquecedor a gás de passagem: água quente instantânea nos chuveiros, pias das suítes e cozinha*</li>
+              <li>Ponto e rede frigorígena para ar-condicionado nas áreas sociais e no dormitório*</li>
+              <li>Área técnica exclusiva para as máquinas de ar-condicionado</li>
+              <li>Janelas antirruído e persiana integrada, com previsão para automação a cargo do cliente</li>
+            </ul>
+            <p class="footnote">*Infraestrutura entregue pela construtora; equipamento a cargo do cliente.</p>
+          </div>
+        </div>
+
+        <div class="plan plan-wide" role="tabpanel" id="painel-c" aria-labelledby="tab-c" tabindex="0" hidden>
+          <figure class="plan-figure">
+            <img src="assets/img/planta-tipo-c-700.webp" srcset="assets/img/planta-tipo-c-700.webp 700w, assets/img/planta-tipo-c.webp 1400w" sizes="(max-width: 900px) 90vw, 50vw" width="1400" height="829" loading="lazy" alt="Planta humanizada do Tipo C: dois dormitórios nas extremidades, cozinha e sala de jantar ao centro." />
+          </figure>
+          <div class="plan-info">
+            <p class="plan-area">78,00 m²</p>
+            <p class="plan-name">Tipo C</p>
+            <img class="plan-photo" src="assets/img/tipo-c-living-800.webp" width="800" height="449" loading="lazy" alt="Perspectiva ilustrada do living do Tipo C, com cozinha integrada, bancada com banquetas e sofá." />
+            <span class="caption caption-static">Perspectiva ilustrada Tipo C</span>
+          </div>
+        </div>
+
+        <div class="plan plan-wide" role="tabpanel" id="painel-d" aria-labelledby="tab-d" tabindex="0" hidden>
+          <figure class="plan-figure">
+            <img src="assets/img/planta-tipo-d-700.webp" srcset="assets/img/planta-tipo-d-700.webp 700w, assets/img/planta-tipo-d.webp 1400w" sizes="(max-width: 900px) 90vw, 50vw" width="1400" height="925" loading="lazy" alt="Planta humanizada do Tipo D, cobertura: suíte, sala integrada à cozinha e terraço com mesa." />
+          </figure>
+          <div class="plan-info">
+            <p class="plan-area">53,80 m²</p>
+            <p class="plan-name">Tipo D · Cobertura</p>
+            <p>Unidade de cobertura, no último pavimento do edifício.</p>
+          </div>
+        </div>
+
+        <div class="plan plan-wide" role="tabpanel" id="painel-e" aria-labelledby="tab-e" tabindex="0" hidden>
+          <figure class="plan-figure">
+            <img src="assets/img/planta-tipo-e-700.webp" srcset="assets/img/planta-tipo-e-700.webp 700w, assets/img/planta-tipo-e.webp 1400w" sizes="(max-width: 900px) 90vw, 50vw" width="1400" height="879" loading="lazy" alt="Planta humanizada do Tipo E, cobertura: cozinha, sala de estar e jantar, suíte e terraço." />
+          </figure>
+          <div class="plan-info">
+            <p class="plan-area">53,80 m²</p>
+            <p class="plan-name">Tipo E · Cobertura</p>
+            <p>Unidade de cobertura, no último pavimento do edifício.</p>
+          </div>
+        </div>
+
+        <p class="plans-note">Plantas humanizadas meramente ilustrativas.</p>
+      </section>
+
+      <!-- Lazer -->
+      <section class="leisure" id="lazer" aria-labelledby="lazer-title">
+        <div class="leisure-copy">
+          <h2 id="lazer-title" class="heading rule">Lazer que completa a experiência</h2>
+          <ul class="dots">
+            <li>Hall</li>
+            <li>Salão de festas</li>
+            <li>Área gourmet</li>
+            <li>Academia</li>
+            <li>Espaço pet</li>
+            <li>Lavanderia</li>
+            <li>Piscina</li>
+            <li>Sala de jogos</li>
+            <li>Terraço</li>
+          </ul>
+        </div>
+
+        <ul class="gallery" aria-label="Perspectivas ilustradas do lazer">
+          <li class="g-wide"><button type="button" data-full="assets/img/piscina.webp"><img src="assets/img/piscina-800.webp" width="800" height="450" loading="lazy" alt="Piscina coberta com pergolado de madeira, jardim vertical e vista da cidade." /><span class="caption">Perspectiva ilustrada piscina</span></button></li>
+          <li><button type="button" data-full="assets/img/academia.webp"><img src="assets/img/academia-800.webp" width="800" height="450" loading="lazy" alt="Academia com esteiras e equipamentos de musculação." /><span class="caption">Perspectiva ilustrada academia</span></button></li>
+          <li><button type="button" data-full="assets/img/salao-de-festas.webp"><img src="assets/img/salao-de-festas-800.webp" width="800" height="450" loading="lazy" alt="Salão de festas com mesas de madeira, bar ao fundo e pavão pintado na parede." /><span class="caption">Perspectiva ilustrada salão de festas</span></button></li>
+          <li><button type="button" data-full="assets/img/area-gourmet.webp"><img src="assets/img/area-gourmet-800.webp" width="800" height="450" loading="lazy" alt="Área gourmet com mesas, sofá e iluminação indireta." /><span class="caption">Perspectiva ilustrada área gourmet</span></button></li>
+          <li><button type="button" data-full="assets/img/terraco.webp"><img src="assets/img/terraco-800.webp" width="800" height="450" loading="lazy" alt="Terraço com sofás, mesas e grandes janelas." /><span class="caption">Perspectiva ilustrada terraço</span></button></li>
+          <li><button type="button" data-full="assets/img/sala-de-jogos.webp"><img src="assets/img/sala-de-jogos-800.webp" width="800" height="450" loading="lazy" alt="Sala de jogos com mesas de carteado e painel de madeira." /><span class="caption">Perspectiva ilustrada sala de jogos</span></button></li>
+          <li><button type="button" data-full="assets/img/lavanderia.webp"><img src="assets/img/lavanderia-800.webp" width="800" height="450" loading="lazy" alt="Lavanderia coletiva com máquinas de lavar e secar empilhadas." /><span class="caption">Perspectiva ilustrada lavanderia</span></button></li>
+          <li class="g-wide"><button type="button" data-full="assets/img/piscina-terraco.webp"><img src="assets/img/piscina-terraco-800.webp" width="800" height="450" loading="lazy" alt="Piscina vista de dentro, sob o pergolado, com jardim vertical à direita." /><span class="caption">Perspectiva ilustrada piscina terraço</span></button></li>
         </ul>
       </section>
 
-      <section class="interest" id="interesse" aria-labelledby="interesse-title">
-        <div class="interest-copy">
-          <h2 id="interesse-title">Seja o primeiro a saber.</h2>
+      <!-- Tour 360 -->
+      <section class="section tour" id="tour" aria-labelledby="tour-title">
+        <div class="tour-head">
+          <h2 id="tour-title" class="heading rule">Tour virtual 360°</h2>
+          <p class="lead">Percorra os ambientes do Argos Residence antes de visitar o decorado.</p>
+        </div>
+        <div class="tour-frame" id="tour-frame" data-src="https://kuula.co/share/collection/7HyZb?logo=1&amp;info=1&amp;fs=1&amp;vr=0&amp;thumbs=1">
+          <img src="assets/img/terraco-800.webp" srcset="assets/img/terraco-800.webp 800w, assets/img/terraco.webp 1600w" sizes="(max-width: 1200px) 100vw, 1200px" width="1600" height="900" loading="lazy" alt="" />
+          <button type="button" class="tour-play" id="tour-play">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M19 15l14 9-14 9z" fill="currentColor"/></svg>
+            Iniciar tour 360°
+          </button>
+        </div>
+        <p class="tour-alt">
+          Prefere em tela cheia?
+          <a href="https://kuula.co/post/n1/collection/7HyZb" target="_blank" rel="noopener noreferrer">Abrir o tour no Kuula</a>
+        </p>
+      </section>
+
+      <!-- Autores -->
+      <section class="section authors" aria-labelledby="autores-title">
+        <div class="authors-copy">
+          <h2 id="autores-title" class="heading">Criado por quem é referência</h2>
           <p>
-            Plantas, localização, valores e condições serão apresentados primeiro
-            a quem estiver na lista de interesse. Deixe seu nome e falamos com você
-            pelo WhatsApp.
+            Profissionais que entendem a arquitetura. Um projeto pensado para atravessar o tempo,
+            valorizar o espaço e transformar o morar em algo natural, fluido e inteligente.
           </p>
+        </div>
+        <dl class="team">
+          <div><dt>Nivaldo Callegari</dt><dd>Projeto arquitetônico</dd></div>
+          <div><dt>Andra Callegari</dt><dd>Projeto arquitetônico</dd></div>
+          <div><dt>Edria Callegari</dt><dd>Projeto arquitetônico</dd></div>
+          <div><dt>Sinésio Scarabello</dt><dd>Engenharia</dd></div>
+        </dl>
+        <div class="developer">
+          <img src="assets/img/logo-sc-argos-verde.webp" width="500" height="492" loading="lazy" alt="SC Argos Incorporações" />
+          <p>Realização</p>
+        </div>
+      </section>
+
+      <!-- Decorado + lista de interesse -->
+      <section class="visit" id="decorado" aria-labelledby="visita-title">
+        <div class="visit-copy">
+          <h2 id="visita-title" class="heading">Visite o decorado</h2>
+          <address class="address address-light">
+            Av. Dr. Cavalcanti, 516<br />Centro, Jundiaí – SP, 13201-003
+          </address>
+          <p>
+            Agende sua visita ou peça plantas, valores e condições. Respondemos pelo WhatsApp.
+          </p>
+          <a class="visit-phone" href="https://wa.me/5511921991337" target="_blank" rel="noopener noreferrer">(11) 92199-1337</a>
         </div>
 
         <form class="interest-form" id="interest-form" novalidate>
@@ -159,33 +426,65 @@
           </fieldset>
 
           <div class="field">
+            <label for="planta">Planta de interesse <span class="optional">(opcional)</span></label>
+            <select id="planta" name="planta">
+              <option value="">Ainda não sei</option>
+              <option>Tipo A · 38,75 m²</option>
+              <option>Tipo B · 39,00 m²</option>
+              <option>Tipo C · 78,00 m²</option>
+              <option>Tipo D · Cobertura 53,80 m²</option>
+              <option>Tipo E · Cobertura 53,80 m²</option>
+            </select>
+          </div>
+
+          <div class="field">
             <label for="mensagem">Alguma pergunta? <span class="optional">(opcional)</span></label>
             <textarea id="mensagem" name="mensagem" rows="3"></textarea>
           </div>
 
-          <button class="btn btn-solid btn-wide" type="submit">
+          <button class="btn btn-light btn-wide" type="submit">
             <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>
             Enviar pelo WhatsApp
           </button>
-          <p class="form-note">
-            Abriremos o WhatsApp com sua mensagem pronta. Você revisa e envia.
-          </p>
+          <p class="form-note">Abriremos o WhatsApp com sua mensagem pronta. Você revisa e envia.</p>
         </form>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-brand">Argos <em>Residence</em></div>
+      <div class="footer-brand">
+        <img src="assets/img/logo-argos-branco.webp" width="700" height="573" loading="lazy" alt="Argos Residence" />
+        <img src="assets/img/logo-sc-argos-branco.webp" width="500" height="492" loading="lazy" alt="SC Argos Incorporações" />
+      </div>
       <p class="footer-legal">
-        Imagens meramente ilustrativas. Empreendimento em fase de pré-lançamento;
-        informações sujeitas a alteração.
+        O Argos Residence é um empreendimento imobiliário aprovado pela Prefeitura Municipal de
+        Jundiaí/SP, através da Lei nº 9.321 de 2019, pelo Processo de Aprovação SAEPRO nº 2025/3622.
+        A incorporação imobiliária encontra-se devidamente registrada sob o R. 06 na matrícula
+        nº 188.893 do 2º Cartório de Registro de Imóveis da Comarca de Jundiaí/SP, em conformidade
+        com a Lei nº 4.591/64.
       </p>
-      <p class="footer-copy">© <span id="ano">2026</span> Argos Residence</p>
+      <p class="footer-legal">
+        Todas as imagens deste site são meramente ilustrativas e podem sofrer alterações durante a
+        compatibilização técnica. O projeto será executado de acordo com o memorial descritivo,
+        inclusive equipamentos, acabamentos e decoração das áreas comuns. A vegetação do paisagismo
+        ilustrado representa o porte adulto de referência das espécies; na entrega do empreendimento
+        ela será plantada em mudas, nos termos do projeto.
+      </p>
+      <p class="footer-copy">© <span id="ano">2026</span> Argos Residence · argosresidence.com.br</p>
     </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Imagem ampliada">
+      <figure>
+        <img id="lightbox-img" src="" alt="" />
+        <figcaption id="lightbox-cap"></figcaption>
+      </figure>
+      <button type="button" class="lb-btn lb-prev" data-step="-1" aria-label="Imagem anterior">‹</button>
+      <button type="button" class="lb-btn lb-next" data-step="1" aria-label="Próxima imagem">›</button>
+      <button type="button" class="lb-btn lb-close" aria-label="Fechar">×</button>
+    </dialog>
 
     <a
       class="whatsapp-fab"
-      id="whatsapp-fab"
       href="https://wa.me/5511921991337?text=Visitei%20o%20site%20e%20quero%20saber%20mais%20sobre%20o%20empreendimento%20Argos%20Residence"
       target="_blank"
       rel="noopener noreferrer"
@@ -194,6 +493,6 @@
       <span>Falar no WhatsApp</span>
     </a>
 
-    <script src="script.js?v=4" defer></script>
+    <script src="script.js?v=5" defer></script>
   </body>
 </html>
