@@ -21,11 +21,8 @@ e abre o WhatsApp `+55 11 92199-1337` com o texto pronto. Para trocar o número,
 `WHATSAPP` em `script.js` e o link do botão flutuante em `index.html`.
 
 ## Publicação na Hostinger
-Envie **todo o conteúdo do repositório** (incluindo a pasta `assets/`) para `public_html`,
-via Git ou Gerenciador de Arquivos.
-
-Depois do domínio definido, troque `og:image` em `index.html` por uma URL absoluta
-(ex.: `https://seudominio.com.br/assets/inicial.jpg`) para a prévia aparecer no WhatsApp e redes sociais.
+O site está em https://argosresidence.com.br, com deploy automático pelo Git da Hostinger:
+cada push na `main` publica o site (webhook configurado no GitHub).
 
 Se as alterações não aparecerem, aumente o `?v=` de `styles.css` e `script.js` no `index.html`
 e limpe o cache da hospedagem.
