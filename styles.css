@@ -1097,6 +1097,10 @@ strong {
   max-width: 62rem;
 }
 
+.footer-legal + .footer-legal {
+  margin-top: 0.8rem;
+}
+
 .footer-copy {
   margin-top: 1rem;
 }
